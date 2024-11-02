@@ -4,12 +4,12 @@ import os
 
 # Clear any existing env variables
 if "DATABASE_URL" in os.environ:
-    del os.environ["DATABASE_URL"]
+    del os.environ["DATABASE_URL2"]
 
 # Load the .env file
 load_dotenv(override=True)
 
-conn_str = os.getenv("DATABASE_URL")
+conn_str = os.getenv("DATABASE_URL2")
 print(f"Connection string: {conn_str}")
 
 try:
